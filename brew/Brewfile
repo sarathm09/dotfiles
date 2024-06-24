@@ -1,0 +1,77 @@
+tap "cloudfoundry/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "mongodb/brew"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# New way to see and navigate directory trees
+brew "broot"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Core application library for C
+brew "glib"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# GNU Emacs text editor
+brew "emacs"
+# Emacs dependency management
+brew "cask"
+# Modern replacement for 'ls'
+brew "exa"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# GNU compiler collection
+brew "gcc"
+# Distributed revision control system
+brew "git"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg", link: false
+# Database of common MIME types
+brew "shared-mime-info"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# Mac App Store command-line interface
+brew "mas"
+# Java-based project management
+brew "maven"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# Platform built on V8 to build network applications
+brew "node"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# Generate clients, server stubs, and docs from an OpenAPI spec
+brew "swagger-codegen"
+# JavaScript package manager
+brew "yarn"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+brew "cloudfoundry/tap/cf-cli"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Application launcher and productivity software
+cask "alfred"
+# Automated testing of webapps for Google Chrome
+cask "docker"
+# Collaborative team software
+cask "figma"
+# Free and open-source media player
+cask "iina"
+# Connect to your Android devices
+cask "macdroid"
+# Control your tools with a few keystrokes
+cask "raycast"
+# JavaScript playground that auto-evaluates as code is typed
+cask "runjs"
