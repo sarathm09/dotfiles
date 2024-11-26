@@ -1,0 +1,111 @@
+# General aliases
+alias cls=clear
+alias ls='ls -lhG'
+alias dir='du -sh * | sort -h'
+alias reload='source ~/.zshrc'
+alias python='python3'
+
+
+# Docker aliases
+alias dc=docker-compose
+alias d=docker
+alias dps='docker ps'
+
+
+# CD aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+
+# Git aliases
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gfa='git fetch --all'
+alias gpo='git push origin'
+alias gpoh='git push origin HEAD'
+alias pull-all="find . -maxdepth 1 -type d -exec sh -c 'cd \"{}\" && pwd && git pull --rebase' \;"
+alias gc='f() { gfa; git checkout -b $1 origin/master };f'
+alias gcd='f() { gfa; git checkout -b $1 origin/devo };f'
+alias gcm='f() { gfa; git checkout -b $1 origin/mainline };f'
+alias gcu='f() { gfa; git checkout -b $1 upstream/master};f'
+alias add='git add '
+alias commit='f() { gs; git commit -m $1 };f'
+alias gc='f() { gs; git commit -m $1 };f'
+alias gca='f() { gs; git commit --amend -m $1 };f'
+alias commit-all='f() { gs; git add .; git commit -S -m $1 };f'
+alias push='f() { gpoh; gh pr create };f'
+alias pr='f() { gh pr create };f'
+alias squash='f() { git reset --soft HEAD~$1 && git commit };f'
+# Gradle
+alias gb='gradle build --parallel --stacktrace'
+
+# UUID
+alias uuid4=`echo $(od -x /dev/urandom | head -1 | awk '{OFS="-"; print toupper($2$3$4$5$6$7$8$9)}')`
+alias uuid=uuidgen
+
+# YTDL related
+
+alias yt-v="yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --write-sub --sub-lang en "
+alias yt-a="yt-dlp -f bestaudio -x --audio-format mp3 "# General aliases
+alias cls=clear
+alias ls='ls -lhG'
+alias dir='du -sh * | sort -h'
+alias reload='source ~/.zshrc'
+alias python='python3'
+
+
+# Docker aliases
+alias dc=docker-compose
+alias d=docker
+alias dps='docker ps'
+
+
+# CD aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+
+# Git aliases
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gfa='git fetch --all'
+alias gpo='git push origin'
+alias gpoh='git push origin HEAD'
+alias pull-all="find . -maxdepth 1 -type d -exec sh -c 'cd \"{}\" && pwd && git pull --rebase' \;"
+alias gc='f() { gfa; git checkout -b $1 origin/master };f'
+alias gcd='f() { gfa; git checkout -b $1 origin/devo };f'
+alias gcm='f() { gfa; git checkout -b $1 origin/mainline };f'
+alias gcu='f() { gfa; git checkout -b $1 upstream/master};f'
+alias add='git add '
+alias commit='f() { gs; git commit -m $1 };f'
+alias gc='f() { gs; git commit -m $1 };f'
+alias gca='f() { gs; git commit --amend -m $1 };f'
+alias commit-all='f() { gs; git add .; git commit -S -m $1 };f'
+alias push='f() { gpoh; gh pr create };f'
+alias pr='f() { gh pr create };f'
+alias squash='f() { git reset --soft HEAD~$1 && git commit };f'
+# Gradle
+alias gb='gradle build --parallel --stacktrace'
+
+# UUID
+alias uuid4=`echo $(od -x /dev/urandom | head -1 | awk '{OFS="-"; print toupper($2$3$4$5$6$7$8$9)}')`
+alias uuid=uuidgen
+
+# YTDL related
+
+alias yt-v="yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --write-sub --sub-lang en "
+alias yt-a="yt-dlp -f bestaudio -x --audio-format mp3 "
