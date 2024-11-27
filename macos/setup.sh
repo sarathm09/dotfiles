@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # ~/.macos — https://mths.be/macos
+# https://macos-defaults.com/
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -96,6 +97,5 @@ chmod +x workspace/setup.sh
 ./workspace/setup.sh
 
 # Copying work related config
-
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
