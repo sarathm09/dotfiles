@@ -14,13 +14,13 @@ sudo systemsetup -setrestartfreeze on
 sudo pmset -a displaysleep 15
 
 # Disable machine sleep while charging
-# sudo pmset -c sleep 0
+sudo pmset -c sleep 0
 
-# Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 5
+# Set machine sleep to 60 minutes on battery
+sudo pmset -b sleep 60
 
 # Set standby delay to 24 hours (default is 1 hour)
-# sudo pmset -a standbydelay 86400
+sudo pmset -a standbydelay 86400
 
 # Never go into computer sleep mode
 # sudo systemsetup -setcomputersleep Off > /dev/null
