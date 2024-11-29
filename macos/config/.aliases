@@ -4,7 +4,7 @@ alias ls='ls -lhG'
 alias dir='du -sh * | sort -h'
 alias reload='source ~/.zshrc'
 alias python='python3'
-
+alias cat='bat'
 
 # Docker aliases
 alias dc=docker-compose
@@ -43,6 +43,21 @@ alias commit-all='f() { gs; git add .; git commit -S -m $1 };f'
 alias push='f() { gpoh; gh pr create };f'
 alias pr='f() { gh pr create };f'
 alias squash='f() { git reset --soft HEAD~$1 && git commit };f'
+
+
+
+# Vite
+alias vc='npm create vite@latest'
+
+
+# Node
+alias ni='npm install'
+alias nd='npm run dev'
+alias nb='npm run build'
+alias ns='npm run start'
+
+
+
 # Gradle
 alias gb='gradle build --parallel --stacktrace'
 
