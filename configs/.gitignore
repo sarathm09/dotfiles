@@ -1,0 +1,28 @@
+# MacOS
+.DS_Store
+
+# General
+node_modules
+dist
+logs
+
+.history
+.env
+.cache
+.next
+
+*.tgz
+*.tsbuildinfo
+*.log
+*.logs
+
+# Java
+target
+.class
+
+# Intellij
+.idea
+
+# Yarn
+yarn.lock
+yarn-error.log
